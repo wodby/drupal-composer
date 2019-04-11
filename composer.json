@@ -16,21 +16,20 @@
         }
     ],
     "require": {
-        "php": ">=5.2.5",
+        "php": ">=5.3.3",
         "ext-curl": "*",
         "ext-gd": "*",
         "ext-json": "*",
         "ext-openssl": "*",
         "ext-pdo": "*",
-        "ext-pdo_mysql": "*",
         "ext-xml": "*",
         "composer/installers": "^1.2",
         "composer/semver": "^1.4",
-        "cweagans/composer-patches": "^1.6",
+        "cweagans/composer-patches": "^1.6.5",
         "drupal-composer/preserve-paths": "^0.1",
         "drupal/composer_autoloader": "^1.0",
-        "drupal/drupal": "~7.0",
-        "drush/drush": "~8.0",
+        "drupal/drupal": "^7.62",
+        "drush/drush": "^8.0",
         "symfony/filesystem": "~2.7|^3",
         "webflo/drupal-finder": "^1.0.0"
     },
@@ -79,15 +78,7 @@
             }
         },
         "preserve-paths": [
-            "web/sites/all/drush",
-            "web/sites/all/libraries",
-            "web/sites/all/modules/contrib",
-            "web/sites/all/modules/custom",
-            "web/sites/all/modules/features",
-            "web/sites/all/themes/contrib",
-            "web/sites/all/themes/custom",
-            "web/sites/all/translations",
-            "web/sites/default"
+            "web/sites"
         ]
     }
 }
